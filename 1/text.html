@@ -13,7 +13,7 @@
 <script>
 //没考虑大于100的情况
     //prompt 两个参数第一个
-   let a= prompt("a");
+   let a= +prompt("a");
 //    console.log(a)
 if(a >= 100){
     alert("bmw")
@@ -21,9 +21,11 @@ if(a >= 100){
     alert("inpone5")
 }else if(a>60){
     alert("参考书")
-}{
+}else{
     alert("一顿打")
 }
-   
+   if(a=100){
+       window.close()
+   }
 </script>
 </html>
